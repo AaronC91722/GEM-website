@@ -2,6 +2,113 @@
 
 <html lang="en">
 
+<style>
+    .center-img-text h1,
+    .center-img-text #scramble,
+    .center-img-text p {
+        font-size: 7vw;
+        line-height: 1.1;
+        word-break: break-word;
+    }
+    @media (min-width: 600px) {
+        .center-img-text h1,
+        .center-img-text #scramble,
+        .center-img-text p {
+            font-size: 3.5vw;
+        }
+    }
+    @media (max-width: 500px) {
+        .center-img-text {
+            font-size: 5vw !important;
+            padding: 0 2vw;
+        }
+        .center-img-text h1,
+        .center-img-text #scramble,
+        .center-img-text p {
+            font-size: 7vw;
+        }
+    }
+
+    
+    .footer {
+        padding: 10px 5vw;
+        text-align: left;
+        background: yellow;
+        position: relative;
+        font-size: 4vw;
+    }
+    .footer .glitch,
+    .footer .glow {
+        font-size: 4vw !important;
+        word-break: break-word;
+    }
+    .footer .subtitle {
+        font-size: 2.5vw !important;
+        left: 0 !important;
+        position: static !important;
+        text-align: left !important;
+        letter-spacing: 0.2em !important;
+        margin-top: 10px;
+    }
+    .img-footer {
+        text-align: right;
+        margin-top: 10px;
+    }
+    .img-footer video {
+        width: 100px;
+        height: 100px;
+        max-width: 40vw;
+        max-height: 40vw;
+    }
+    @media (min-width: 600px) {
+        .footer {
+            font-size: 1.2vw;
+        }
+        .footer .glitch,
+        .footer .glow {
+            font-size: 2vw !important;
+        }
+        .footer .subtitle {
+            font-size: .8vw !important;
+            left: 17% !important;
+            position: absolute !important;
+            text-align: center !important;
+            letter-spacing: 1em !important;
+            margin-top: 0;
+        }
+        .img-footer video {
+            width: 200px;
+            height: 200px;
+            max-width: 200px;
+            max-height: 200px;
+        }
+    }
+    @media (max-width: 700px) {
+        .row {
+            flex-direction: column;
+        }
+        .side, .main {
+            flex: 100%;
+            max-width: 100%;
+            padding: 10px;
+        }
+    }
+
+    @media (max-width: 500px) {
+        .side, .main {
+            padding: 5px;
+            font-size: 4vw;
+        }
+        .side img, .main img {
+            max-width: 100%;
+            height: auto;
+        }
+        .main h2, .side h2 {
+            font-size: 6vw !important;
+        }
+    }
+</style>
+
 <!--code for the head of the website\/-->
 <head>
     <meta charset="UTF-8">
@@ -101,6 +208,8 @@
 <!--code the row(side and main) of the website\/-->
     <div class="row">
         <div class="side" style="background-color: black;"><section id="reviews">
+            <a href="https://g.page/r/CatwxOmw9aBdEAI/review" target="_blank">
+            <img src="img\14-143813_transparent-google-review-leave-us-a-review-on.png" alt="review us on google" width="150" hieght="150"></a>
             <h2 style="color: lightskyblue;">What Our Customers Say</h2>
             <div class="review">
                 <div id="reviews-container"></div>
